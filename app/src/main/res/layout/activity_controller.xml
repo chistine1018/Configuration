@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="60dp"
+    tools:context=".view.ControllerActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            style="@style/button"
+            android:onClick="touckEvent"
+            android:tag="00"/>
+
+        <Button
+            style="@style/button"
+            android:onClick="touckEvent"
+            android:tag="01"/>
+
+        <Button
+            style="@style/button"
+            android:onClick="touckEvent"
+            android:tag="02"/>
+
+        <Button
+            style="@style/button"
+            android:onClick="touckEvent"
+            android:tag="10"/>
+
+        <Button
+            style="@style/button"
+            android:onClick="touckEvent"
+            android:tag="11"/>
+
+        <Button
+            style="@style/button"
+            android:onClick="touckEvent"
+            android:tag="12"/>
+
+        <Button
+            style="@style/button"
+            android:onClick="touckEvent"
+            android:tag="20"/>
+
+        <Button
+            style="@style/button"
+            android:onClick="touckEvent"
+            android:tag="21"/>
+
+        <Button
+            style="@style/button"
+            android:onClick="touckEvent"
+            android:tag="22"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/result_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/result_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="X"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
