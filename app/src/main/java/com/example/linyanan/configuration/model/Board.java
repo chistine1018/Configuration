@@ -52,6 +52,8 @@ public class Board {
     public boolean isAlreadyWin(Player player, int row, int coulum) {
         count++;
         Log.e("TAG", "isAlreadyWin: " + count);
+
+
         return (cells[0][0].getValue() == player
                 && cells[1][1].getValue() == player
                 && cells[2][2].getValue() == player
@@ -63,6 +65,7 @@ public class Board {
                 || cells[row][0].getValue() == player
                 && cells[row][1].getValue() == player
                 && cells[row][2].getValue() == player
+
                 || cells[0][coulum].getValue() == player
                 && cells[1][coulum].getValue() == player
                 && cells[2][coulum].getValue() == player
